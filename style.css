@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Gravitas+One|Ubuntu&display=swap');
+
 body {
   color: white;
   font-size: 25px;
   text-align: center;
   background-image: linear-gradient(90deg,red,blue,blue,blue,red);
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
 }
 
 p {
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
 }
 
@@ -21,7 +23,7 @@ h1 {
   font-style: normal;
   font-weight: normal;
   align-content: center;
-  font-family: 'Gravitas One';
+  font-family: 'Gravitas One', cursive;
 }
 
 #dropdown {
