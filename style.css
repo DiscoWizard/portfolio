@@ -6,11 +6,36 @@ body {
   text-align: center;
   background-image: linear-gradient(90deg,red,blue,blue,blue,red);
   font-family: 'Ubuntu', sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.image1 {
+  background-image: url("images/bg1.png");
+  height: 600px;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.block {
+  position:relative;
+  overflow:hidden;
+  text-align: center;
+  margin: 5%;
+  height: auto;
+}
+
+.bod {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color:blue;
 }
 
 p {
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
+  margin: 20px;
 }
 
 h1 {
@@ -19,11 +44,16 @@ h1 {
   font-size: 50px;
   top: 0px;
   width: 100%;
-  padding: 20px;
   font-style: normal;
   font-weight: normal;
   align-content: center;
   font-family: 'Gravitas One', cursive;
+  font-size: 4vw;
+  z-index: 5;
+}
+#header {
+    transition: 0.2s;
+    padding: 2%;
 }
 
 #dropdown {
@@ -39,9 +69,6 @@ h1 {
   height: auto;
 }
 
-.contain1:hover{
-    background: red;
-}
 
 a {
   color: yellow;

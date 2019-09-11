@@ -7,48 +7,29 @@
 
   </head>
   <body>
-    <h1>DISCO WIZARD CENTRAL</h1>
+    <h1 id="header">DISCO WIZARD CENTRAL</h1>
+  <div class="bod">
+<p class="block">
+  &nbsp;<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<div class="block">
+<div class="image1">
+</div>
+</div>
+<div style="font-size:10px"> &nbsp; </div>
+</dvi>
 
-    <div style="contain1" onclick="myFunction()">⮶poems⮷</div>
+<script>
+window.onscroll = function() {scrollFunction()};
 
-    <div id="dropdown">
-        <div>Level 1:
-      <a href="https://twitter.com/theswordwizard">ONE</a>
-      <a href="https://twitter.com/theswordwizard">TWO</a>
-      <a href="https://twitter.com/theswordwizard">THREE</a> </div>
-        <div>Level 2:
-      <a href="https://twitter.com/theswordwizard">ONE</a>
-      <a href="https://twitter.com/theswordwizard">TWO</a>
-      <a href="https://twitter.com/theswordwizard">THREE</a> </div>
-        <div>Level 3:
-      <a href="https://twitter.com/theswordwizard">ONE</a>
-      <a href="https://twitter.com/theswordwizard">TWO</a>
-      <a href="https://twitter.com/theswordwizard">THREE</a> </div>
-        <div>Level 4:
-      <a href="https://twitter.com/theswordwizard">ONE</a>
-      <a href="https://twitter.com/theswordwizard">TWO</a>
-      <a href="https://twitter.com/theswordwizard">THREE</a> </div>
-        <div>Level 5:
-      <a href="https://twitter.com/theswordwizard">ONE</a>
-      <a href="https://twitter.com/theswordwizard">TWO</a>
-      <a href="https://twitter.com/theswordwizard">THREE</a> </div>
-  </div>
-
-    <img src="">
-
-
-
-
-    <script>
-    function myFunction() {
-      var x = document.getElementById("dropdown");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-    </script>
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.padding = ".5%";
+  } else {
+    document.getElementById("header").style.padding = "2%";
+  }
+}
+</script>
 
 </body>
 </html>
