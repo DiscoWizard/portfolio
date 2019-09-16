@@ -66,12 +66,31 @@ h3 {
   justify-content: center;
 }
 
-.image1 {
-  background-image: url("images/bg1.png");
+.imageblock {
   height: 500px;
   background-position-x: center;
   background-position-y: center;
   margin-top: 5%;
+  background-color: black;
+  transform: rotate(0deg);
+}
+
+img {
+  background-position-x: center;
+  background-position-y: center;
+  margin-top: 125px;
+  transform: rotate(0deg);
+  animation-name: spinny1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinny1 {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
 }
 
 h1 {
@@ -87,8 +106,9 @@ h1 {
   font-size: 4vw;
   z-index: 5;
 }
+
 #header {
-    transition: 0.2s;
+    transition: 0.1s;
     padding: 2%;
 }
 
@@ -97,19 +117,11 @@ h1 {
   height:20px;
 }
 
-#dropdown {
-    width: 100%;
-    height: auto;
-    padding-top: 10px;
-    text-align: center;
-}
-
 .contain1 {
   position: relative;
   width: 100%;
   height: auto;
 }
-
 
 a {
   color: yellow;

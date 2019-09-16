@@ -3,55 +3,83 @@
   <head>
     <title>Poems</title>
 
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="dome1.css" >
 
   </head>
   <body>
-    <a style="color:white; text-decoration:none;" href="https://discowizard.github.io/class-site/"><h1 id="header">DISCO WIZARD CENTRAL</h1></a>
+    <a style="color:white; text-decoration:none;" href="https://discowizard.github.io/class-site/"><h1>DISCO WIZARD CENTRAL</h1></a>
 
-    <p onclick="myFunction()">⮶poems⮷</p>
+    <div class="scene">
+      <div class="cube">
+        <div class="cube__face cube__face--front">POEMS</div>
+        <div class="cube__face cube__face--right">
+          <a href="https://discowizard.github.io/class-site/poems/1_1">1A</a>
+          <a href="https://discowizard.github.io/class-site/poems/1_2">1B</a>
+          <a href="https://discowizard.github.io/class-site/poems/1_3">1C</a>
+        </div>
+        <div class="cube__face cube__face--back">
+          <a href="https://discowizard.github.io/class-site/poems/2_1">2A</a>
+          <a href="https://discowizard.github.io/class-site/poems/2_2">2B</a>
+          <a href="https://discowizard.github.io/class-site/poems/2_3">2C</a>
+        </div>
+        <div class="cube__face cube__face--left">
+          <a href="https://discowizard.github.io/class-site/poems/3_1">3A</a>
+          <a href="https://discowizard.github.io/class-site/poems/3_2">3B</a>
+          <a href="https://discowizard.github.io/class-site/poems/3_3">3C</a>
+        </div>
+        <div class="cube__face cube__face--top">
+          <a href="https://discowizard.github.io/class-site/poems/4_1">4A</a>
+          <a href="https://discowizard.github.io/class-site/poems/4_2">4B</a>
+          <a href="https://discowizard.github.io/class-site/poems/4_3">4C</a>
+        </div>
+        <div class="cube__face cube__face--bottom">
+          <a href="https://discowizard.github.io/class-site/poems/5_1">5A</a>
+          <a href="https://discowizard.github.io/class-site/poems/5_2">5B</a>
+          <a href="https://discowizard.github.io/class-site/poems/5_3">5C</a>
+        </div>
+      </div>
+    </div>
+    <p class="radio-group" >
+      <label>
+        <input type="radio" name="rotate-cube-side" value="front" checked />
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="right" /> L1
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="back" /> L2
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="left" /> L3
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="top" /> L4
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="bottom" /> L5
+      </label>
+    </p>
 
-    <div id="dropdown">
-        <div>Level 1:
-      <a href="https://discowizard.github.io/class-site/poems/1_1">ONE</a>
-      <a href="https://discowizard.github.io/class-site/poems/1_2">TWO</a>
-      <a href="https://discowizard.github.io/class-site/poems/1_3">THREE</a> </div>
-        <div>Level 2:
-      <a href="https://discowizard.github.io/class-site/poems/2_1">ONE</a>
-      <a href="https://discowizard.github.io/class-site/poems/2_2">TWO</a>
-      <a href="https://discowizard.github.io/class-site/poems/2_3">THREE</a> </div>
-        <div>Level 3:
-      <a href="https://discowizard.github.io/class-site/poems/3_1">ONE</a>
-      <a href="https://discowizard.github.io/class-site/poems/3_2">TWO</a>
-      <a href="https://discowizard.github.io/class-site/poems/3_3">THREE</a> </div>
-        <div>Level 4:
-      <a href="https://discowizard.github.io/class-site/poems/4_1">ONE</a>
-      <a href="https://discowizard.github.io/class-site/poems/4_2">TWO</a>
-      <a href="https://discowizard.github.io/class-site/poems/4_3">THREE</a> </div>
-        <div>Level 5:
-      <a href="https://discowizard.github.io/class-site/poems/5_1">ONE</a>
-      <a href="https://discowizard.github.io/class-site/poems/5_2">TWO</a>
-      <a href="https://discowizard.github.io/class-site/poems/5_3">THREE</a> </div>
-  </div>
+<script>
+var cube = document.querySelector('.cube');
+var radioGroup = document.querySelector('.radio-group');
+var currentClass = '';
 
-    <img src="">
+function changeSide() {
+  var checkedRadio = radioGroup.querySelector(':checked');
+  var showClass = 'show-' + checkedRadio.value;
+  if ( currentClass ) {
+    cube.classList.remove( currentClass );
+  }
+  cube.classList.add( showClass );
+  currentClass = showClass;
+}
+// set initial side
+changeSide();
 
-
-
-
-    <script>
-    function myFunction() {
-      var x = document.getElementById("dropdown");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-    </script>
-
-
-
+radioGroup.addEventListener( 'change', changeSide );
+</script>
+</div>
 
   </body>
   </html>
