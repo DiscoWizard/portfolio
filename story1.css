@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font&display=swap');
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+    background: black;
+    font-family: 'Cute Font', cursive;
+}
+
+a {
+  color: yellow;
+  font-style: normal;
+  text-decoration: none;
+}
