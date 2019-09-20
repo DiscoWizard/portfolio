@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+    color: gainsboro;
+ 
+    font-size: 5pt
+  width: 100%;
+  height: 40%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+h1 {
+    color:rosybrown;
+    
+}
+
+h2 {
+    
+    color:gainsboro;
+  font-family: monospace;
+  font-style: italic;
+  width: 100%;
+  height: 50%;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+alt {
+    font-size: 500pt;
+}
+
+img {
+    padding: 0pt;
+    margin: 0pt;
+}
+
+#audio-example {
+display: block;
+}
+
