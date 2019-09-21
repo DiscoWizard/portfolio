@@ -5,7 +5,7 @@ body {
   color: white;
   font-size: 25px;
   text-align: center;
-  background-image: linear-gradient(90deg,red,blue,blue,blue,red);
+  background-image: linear-gradient(90deg,blue,white,white,white,blue);
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -29,7 +29,7 @@ body {
 .bod {
   margin-left: 10vw;
   margin-right: 10vw;
-  background-color:blue;
+  background-color:orange;
 }
 
 p {
@@ -71,7 +71,7 @@ h3 {
   background-position-x: center;
   background-position-y: center;
   margin-top: 5%;
-  background-color: red;
+  background-color: white;
   transform: rotate(0deg);
 }
 
@@ -94,7 +94,7 @@ img {
 }
 
 h1 {
-  background-image: linear-gradient(to right, rgba(57, 194, 218, 0), rgba(255, 0, 0, 1) 50%, rgba(57, 194, 218, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 255, 0), rgba(0, 0, 255, 1) 50%, rgba(0, 0, 255, 0));
   position: sticky;
   font-size: 50px;
   top: 0px;
@@ -124,6 +124,6 @@ h1 {
 }
 
 a {
-  color: yellow;
+  color: orange;
   font-style: normal;
 }

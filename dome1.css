@@ -3,17 +3,18 @@
 * { box-sizing: border-box; }
 
 body { font-family: sans-serif;
-    color: white;
+    color: orange;
     font-size: 25px;
     text-align: center;
-    background-image: linear-gradient(90deg,red,blue,blue,blue,red);
+    background-image: linear-gradient(90deg,blue,white,white,white,blue);
     font-family: 'Ubuntu', sans-serif;
 }
 
 a {
-  color: yellow;
+  color: blue;
   font-style: normal;
   text-decoration: none;
+  opacity: .6;
 }
 
 div {
@@ -61,17 +62,17 @@ div {
   text-decoration: none;
 }
 
-.cube__face--front  { background: hsla(  0, 100%, 50%, 0.8);
+.cube__face--front  { background: hsla(29, 100%, 60%, .8);
 }
-.cube__face--right  { background: hsla( 0, 100%, 50%, 0.8);
+.cube__face--right  { background: hsla(29, 100%, 60%, .8);
 }
-.cube__face--back   { background: hsla(0, 100%, 50%, 0.8);
+.cube__face--back   { background: hsla(29, 100%, 60%, .8);
 }
-.cube__face--left   { background: hsla(0, 100%, 50%, 0.8);
+.cube__face--left   { background: hsla(29, 100%, 60%, .8);
 }
-.cube__face--top    { background: hsla(0, 100%, 50%, 0.8);
+.cube__face--top    { background: hsla(29, 100%, 60%, .8);
 }
-.cube__face--bottom { background: hsla(0, 100%, 50%, 0.8);
+.cube__face--bottom { background: hsla(29, 100%, 60%, .8);
 }
 
 .cube__face--front  { transform: rotateY(  0deg) translateZ(250px); }
@@ -89,7 +90,7 @@ label {
 }
 
 h1 {
-  background-image: linear-gradient(to right, rgba(57, 194, 218, 0), rgba(255, 0, 0, 1) 50%, rgba(57, 194, 218, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 255, 0), rgba(0, 0, 255, 1) 50%, rgba(0, 0, 255, 0));
   position: sticky;
   font-size: 50px;
   top: 0px;
