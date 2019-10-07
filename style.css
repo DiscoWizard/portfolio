@@ -103,13 +103,12 @@ h1 {
   font-weight: normal;
   align-content: center;
   font-family: 'Gravitas One', cursive;
-  font-size: 4vw;
+  font-size: 5vw;
   z-index: 5;
 }
 
 #header {
-    transition: 0.1s;
-    padding: 2%;
+    padding: 1%;
 }
 
 .margin20 {
