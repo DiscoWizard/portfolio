@@ -9,6 +9,7 @@ body {
     background: white;
     font-family: 'Courier', sans-serif;
     padding: 5%;
+    overflow-x: hidden;
 }
 
 a {
@@ -66,7 +67,6 @@ img {
 }
 
 .animhead2 {
-  transform: rotate(0deg);
   animation-name: heady2;
   animation-duration: 1s;
   animation-iteration-count: infinite;
