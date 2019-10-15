@@ -89,6 +89,26 @@ img {
   animation-name: wack;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  transform-origin: top;
+  z-index: -2;
+  animation-timing-function: ease-in-out;
+}
+@keyframes wack {
+  0% {transform: rotate(-30deg); margin-left:-500px; top:90px;}
+  50% {transform: rotate(10deg); margin-left:-450px; top:90px;}
+  100% {transform:rotate(-30deg); margin-left:-500px; top:90px;}
+}
+
+.animwave22 {
+  position: absolute;
+  width: 400px;
+  margin-top: -50px;
+  margin-left: -200px;
+  transform: rotate(0deg);
+  animation: linear infinite;
+  animation-name: wack;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   transform-origin: bottom;
   z-index: -2;
   animation-timing-function: ease-in-out;
