@@ -7,11 +7,12 @@
 
   </head>
   <body>
-    <a style="color:white; text-decoration:none;" href="https://discowizard.github.io/class-site/"><h1 id="header">stomping ground</h1></a>
+    <a style="color:white; text-decoration:none;" href="https://discowizard.github.io/class-site/"><h1 id="header">wizardkicks</h1></a>
   <div class="buttan" style="bottom:20px;">
     <a href="https://discowizard.github.io/class-site/poems/5_3"> <h3>poem</h3>
       </a>
     <a href="https://discowizard.github.io/class-site/story/1"> <h3>story</h3>
+
     </a>
     <!-- <a href="https://discowizard.github.io/class-site/interlude"> <h3>interlude </h3>
     </a> -->
@@ -21,14 +22,49 @@
     </a>
     <a href="https://discowizard.github.io/class-site/touchfaith/reflections"> <h3>reflect </h3>
     </a>
+    <CENTER>
+    <FORM>
+    <input type="button" value="neocity" onClick="passWord()" class="button">
+    </FORM>
+    </CENTER>
+    <div> <img class="wizkick1" src="images/wkcircle1.png" alt="WIZARD"></div>
+</div>
+<div class="main">
+  <div class="block">   <p style="color:blue;"> heyo, im alexis and i do a lot of stuff. or at least i try to. with mixed results! check out some of the web projects i've done here and some of my illustrations. i will try to keep updating but we'll see. life comes at ya fast! </p>
+  <div class="leftblock"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  <div class="rightblock"> <p>under construction!</p>
+    </div>
 </div>
 
-<div class="main">
-  <div class="block"></div>
-  <div class="imageblock">  <img src="images/logo1.png" alt="Alexis DeJesus"> </div>
   <div class="margin20"></div>
 </div>
 
 
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('whats the bad comic',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "homestuck") {
+alert('You Got it Right!');
+window.open('https://theswordwizard.neocities.org/');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</SCRIPT>
+
 </body>
+
+
 </html>

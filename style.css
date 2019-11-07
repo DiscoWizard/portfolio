@@ -12,22 +12,52 @@ body {
 }
 
 .main {
+  position: relative;
   color: white;
   font-size: 25px;
   text-align: center;
   margin-bottom: 5%;
   margin-left: 15vw;
   margin-right: 15vw;
-  margin-top: -60px;
+  margin-top: -40px;
+}
+
+.wizkick1 {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 150px;
+  width: 150px;
+  background-position-x: center;
+  background-position-y: center;
+  z-index: 40;
+  animation: spinny1 8s infinite linear;
 }
 
 .block {
   position:relative;
-  overflow:hidden;
-  text-align: center;
   margin: 5%;
   height: auto;
   background-color:white;
+  color: white
+}
+
+.rightblock {
+  position: absolute;
+  width: 18%;
+  height: 500px;
+  background-color: blue;
+  right: 0px;
+  margin-bottom: 20px;
+}
+
+.leftblock {
+  position: absolute;
+  width: 80%;
+  height: 500px;
+  background-color: orange;
+  left: 0px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .bod {
@@ -36,8 +66,24 @@ body {
   background-color:white;
 }
 
+.button {
+  background-color: white;
+  border: none;
+  color: orange;
+  text-align: center;
+  padding: 4px;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 28px;
+  font-family: 'Courier', sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
 p {
   margin: 20px;
+  padding: 20px;
+  font-size: 15px;
 }
 
 h3 {
@@ -71,35 +117,28 @@ h3 {
   flex-flow: wrap;
 }
 
-.imageblock {
-  height: 500px;
-  background-position-x: center;
-  background-position-y: center;
-  margin-top: 5%;
-  background-color: white;
-  transform: rotate(0deg);
-}
+background-position-x: center;
+background-position-y: center;
 
-img {
+.logo {
   background-position-x: center;
   background-position-y: center;
   margin-top: 125px;
   transform: rotate(0deg);
-  animation-name: spinny1;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
+  animation: spinny1 8s infinite linear;
 }
 
 @keyframes spinny1 {
-  0% {transform: rotate(0deg);}
-  25% {transform: rotate(90deg);}
-  50% {transform: rotate(180deg);}
-  75% {transform: rotate(270deg);}
-  100% {transform: rotate(360deg);}
+  from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(359deg);
+}
 }
 
 h1 {
-  background-image: linear-gradient(to right, rgba(0, 0, 255, 0), rgba(0, 0, 255, 1) 50%, rgba(0, 0, 255, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 255, 0), rgba(255, 165, 0) 25%, rgba(255, 165, 0) 75%, rgba(0, 0, 255, 0));
   position: sticky;
   font-size: 50px;
   top: 0px;
