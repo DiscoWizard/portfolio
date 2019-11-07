@@ -45,18 +45,18 @@
 <SCRIPT>
 function passWord() {
 var testV = 1;
-var pass1 = prompt('whats the bad comic',' ');
+var pass1 = prompt('whats the bad comic (lowercase)',' ');
 while (testV < 3) {
 if (!pass1)
 history.go(-1);
 if (pass1.toLowerCase() == "homestuck") {
-alert('You Got it Right!');
+alert('Correct! Make sure you allow Pop-ups.');
 window.open('https://theswordwizard.neocities.org/');
 break;
 }
 testV+=1;
 var pass1 =
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+prompt('Password Incorrect, Please Try Again.','Password');
 }
 if (pass1.toLowerCase()!="password" & testV ==3)
 history.go(-1);
