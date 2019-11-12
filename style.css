@@ -50,7 +50,7 @@ img {
   position: absolute;
   width: 28%;
   height: auto;
-  background-color: blue;
+  background-color: orange;
   right: 0px;
   margin-bottom: 20px;
 }
@@ -59,7 +59,7 @@ img {
   position: absolute;
   width: 70%;
   height: auto;
-  background-color: orange;
+  background-color: blue;
   left: 0px;
   margin-bottom: 20px;
   margin-right: 20px;
