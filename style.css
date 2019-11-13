@@ -25,7 +25,7 @@ body {
 .wizkick1 {
   position: absolute;
   margin-top: -150px;
-  margin-left: 150px;
+  margin-left: 10vw;
   width: 150px;
   background-position-x: center;
   background-position-y: center;
@@ -88,7 +88,7 @@ img {
 p {
   margin: 20px;
   padding: 20px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
 }
 
