@@ -1,0 +1,83 @@
+body {
+  position:relative;
+  color: orange;
+  font-size: 15px;
+  font-family: 'Courier', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pics {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+img {
+
+}
+
+.full {
+  position: relative;
+  width: 49%;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+}
+
+.diamond {
+  position: absolute;
+  left: 50vw;
+  margin-left: -215px;
+  margin-top: 50vh;
+  z-index: 5;
+  width: 400px;
+  height: auto;
+  animation-name: diabounce;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes diabounce {
+  0% {transform: rotate(-10deg) ;}
+  50% {transform: rotate(10deg) ;}
+  100% {transform: rotate(-10deg) ;}
+}
+
+
+.text {
+    text-align: center;
+    overflow-x: hidden;
+}
+
+p {
+  margin: 20px;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+a {
+  color: white;
+  font-style: normal;
+  font-family: "Courier";
+  font-weight: bold;
+}
+
+@keyframes spinny1 {
+  from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(359deg);
+}}
+
+.link {
+  color: orange;
+  font-style: normal;
+  font-family: "Courier";
+  font-weight: bold;
+    background-color: white;
+}
