@@ -5,6 +5,7 @@ body {
   font-family: 'Courier', sans-serif;
   font-weight: bold;
   text-align: center;
+  background-color:black;
 }
 
 .pics {
@@ -33,7 +34,7 @@ img {
   margin: 5px;
   padding: 0px;
   height: auto;
-  min-width: 600px;
+  min-width: 400px;
 }
 .fimage {
   position: relative;
@@ -44,11 +45,11 @@ img {
 .diamond {
   position: absolute;
   left: 50vw;
-  margin-left: -215px;
-  bottom: 50vh;
-  margin-bottom: -200px;
-  z-index: 5;
-  width: 400px;
+  margin-left: -13.5vw;
+  bottom: 50%;
+  margin-bottom: -15vw;
+  z-index: 50;
+  width: 25vw;
   height: auto;
   animation-name: diabounce;
   animation-duration: 5s;
