@@ -18,12 +18,26 @@ body {
 img {
 
 }
-
+.all {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
 .full {
   position: relative;
+  justify-content: space-between;
+  align-items: center;
   width: 49%;
-  margin: 0px;
+  margin: 5px;
   padding: 0px;
+  height: auto;
+  min-width: 600px;
+}
+.fimage {
+  position: relative;
+  width: 100%;
   height: auto;
 }
 
@@ -31,7 +45,8 @@ img {
   position: absolute;
   left: 50vw;
   margin-left: -215px;
-  margin-top: 50vh;
+  bottom: 50vh;
+  margin-bottom: -200px;
   z-index: 5;
   width: 400px;
   height: auto;
@@ -39,13 +54,28 @@ img {
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-
 @keyframes diabounce {
   0% {transform: rotate(-10deg) ;}
   50% {transform: rotate(10deg) ;}
   100% {transform: rotate(-10deg) ;}
 }
 
+.gif0 {
+  position: absolute;
+  z-index: 10
+}
+.gif1 {
+  position: absolute;
+  left: 0vw;
+  bottom: 0vh;
+  width: 30vh;
+}
+.gif2 {
+  position: absolute;
+  right: 0vw;
+  bottom: 0vh;
+  width: 30vh;
+}
 
 .text {
     text-align: center;
