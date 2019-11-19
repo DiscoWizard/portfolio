@@ -42,7 +42,6 @@ img {
   position:relative;
   margin: 5%;
   height: auto;
-  background-color:white;
   color: white
 }
 
@@ -185,4 +184,17 @@ a {
   font-style: normal;
   font-family: "Courier";
   font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  .leftblock {
+    position: relative;
+    width:100%;
+  }
+
+  .rightblock {
+    position: relative;
+    padding-top: 10px;
+    width:100%;
+  }
 }
