@@ -7,6 +7,16 @@ body {
   text-align: center;
   background-color:black;
 }
+.credit {
+  font-size: 12px;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  color: white;
+  font-style: italic;
+  text-align: left;
+  z-index: 100
+}
 
 .pics {
   position: relative;
