@@ -126,3 +126,17 @@ to {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: turquoise;
+}
+
+@media only screen and (max-width: 800px) {
+    .full {
+      position: relative;
+      height:auto;
+    }
+
+    .rightblock {
+      position: relative;
+      padding-top: 10px;
+      width:100%;
+    }
+  }
