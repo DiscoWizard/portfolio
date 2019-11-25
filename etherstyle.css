@@ -108,22 +108,15 @@ to {
     background-color: white;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   background: orange;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: blue;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: turquoise;
 }
