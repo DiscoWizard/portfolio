@@ -56,6 +56,28 @@ body {
   z-index: 100
 }
 
+#float1 {
+  position: fixed;
+  width:25%;
+  bottom:0px;
+  left:0px;
+  z-index: 10;
+}
+#float2 {
+  position: fixed;
+  width:30%;
+  bottom:0px;
+  right:0px;
+  z-index: 10;
+}
+#float3 {
+  position: fixed;
+  width:10%;
+  top:5%;
+  right:0px;
+  z-index: 10;
+}
+
 /* .diamond {
   position: absolute;
   left: 50vw;
