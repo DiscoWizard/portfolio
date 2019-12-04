@@ -1,0 +1,125 @@
+body {
+  position:relative;
+  color: orange;
+  background-color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Courier', sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+.main {
+  position: relative;
+  width: 90%;
+  height: 70vh;
+  background-color: white;
+  margin-top: 20px;
+  left: 50%;
+  margin-left: -45%;
+}
+
+.one {
+  position: absolute;
+  width:550px;
+  left: 20%;
+  bottom: 0px;
+  z-index: 1;
+}
+.two {
+  position: absolute;
+  width:300px;
+  left: 70%;
+  margin-left: -150px;
+  bottom: 0px;
+}
+.three {
+  position: absolute;
+  width:600px;
+  left: 15%;
+  bottom: 0px;
+  z-index: 1;
+}
+.five {
+  position: absolute;
+  width:550px;
+  left: 20%;
+  bottom: 0px;
+  z-index: 1;
+}
+
+
+.options {
+  position: absolute;
+  left: 71%;
+  z-index: 10;
+  margin-left: -100px;
+  bottom: 300px;
+}
+
+.clickthru {
+  position: relative;
+  text-align: center;
+  width: 200px;
+  background: orange;
+  color: blue;
+  font-size: 15px;
+
+}
+
+p {
+
+}
+
+@keyframes spinny1 {
+  from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(359deg);
+}
+}
+
+.link {
+  color: orange;
+  font-style: normal;
+  font-family: "Courier";
+  font-weight: bold;
+    background-color: white;
+}
+
+a {
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+  font-family: "Courier";
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: orange;
+}
+::-webkit-scrollbar-thumb {
+  background: blue;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: turquoise;
+}
+
+@media only screen and (max-width: 800px) {
+  .leftblock {
+    position: relative;
+    width:100%;
+  }
+
+  .rightblock {
+    position: relative;
+    padding-top: 10px;
+    width:100%;
+  }
+}
