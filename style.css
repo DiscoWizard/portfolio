@@ -11,6 +11,17 @@ body {
   overflow-x: hidden;
 }
 
+.copy {
+  font-size: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  color: white;
+  font-style: italic;
+  text-align: left;
+  z-index: 100;
+}
+
 .main {
   position: relative;
   color: white;
@@ -165,6 +176,10 @@ a {
 .main {
   margin-left: 0vw;
   margin-right: 0vw;
+}
+
+.copy {
+  font-size:5px;
 }
 
 .block {
