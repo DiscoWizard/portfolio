@@ -24,8 +24,8 @@ body {
 
 .wizkick1 {
   position: absolute;
-  margin-top: -150px;
-  margin-left: 10vw;
+  margin-top: -160px;
+  margin-left: 25vw;
   width: 150px;
   background-position-x: center;
   background-position-y: center;
@@ -42,7 +42,8 @@ img {
   position:relative;
   margin: 5%;
   height: auto;
-  color: white
+  color: white;
+  margin-top: 60px;
 }
 
 .blueblock {
@@ -72,60 +73,12 @@ img {
   background-color:white;
 }
 
-.button {
-  background-color: white;
-  border: none;
-  color: orange;
-  text-align: center;
-  padding: 4px;
-  text-decoration: underline;
-  display: inline-block;
-  font-size: 28px;
-  font-family: 'Courier', sans-serif;
-  font-weight: bold;
-  margin-left: 10px;
-}
-
 p {
   margin: 20px;
   padding: 20px;
   font-size: 17px;
   font-weight: normal;
 }
-
-h3 {
-  font-weight: normal;
-  position: relative;
-  width: 5%;
-  text-align: center;
-  align-content: center;
-  margin: 20px;
-  justify-content: center;
-  font-weight: bold;
-  background-color: white;
-}
-
-.buttan  {
-  font-size: 25px;
-  line-height: 0px;
-  display: flex;
-  font-family: 'Courier', sans-serif;
-  font-style: italic;
-  font-weight: normal;
-  position: relative;
-  width: 80vw;
-  left: 50%;
-  height: auto;
-  margin-left:-40vw;
-  margin-top: 50px;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  flex-flow: wrap;
-}
-
-background-position-x: center;
-background-position-y: center;
 
 .logo {
   background-position-x: center;
@@ -217,13 +170,14 @@ a {
 .block {
   margin:1vw;
   justify-content: center;
+  margin-top: 60px;
 }
 
   .columnright {
     margin-left: 20px;
   }
 
-  .leftblock {
+  .blueblock {
     position: relative;
     width:100%;
   }
