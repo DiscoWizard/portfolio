@@ -45,22 +45,9 @@ img {
   color: white
 }
 
-.rightblock {
+.blueblock {
   position: absolute;
-  width: 28%;
-  height: auto;
-  background-color: orange;
-  right: 0px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.leftblock {
-  position: absolute;
-  width: 70%;
+  width: 100%;
   height: auto;
   background-color: blue;
   left: 0px;
@@ -72,12 +59,11 @@ img {
 }
 
 .left1 {
-  width: 60%;
+  width: 50%;
 }
 
 .right1 {
-  width: 40%;
-  justify-content: center;
+  width: 50%;
 }
 
 .bod {
@@ -223,18 +209,22 @@ a {
 
 @media only screen and (max-width: 800px) {
 
+.main {
+  margin-left: 0vw;
+  margin-right: 0vw;
+}
+
+.block {
+  margin:1vw;
+  justify-content: center;
+}
+
   .columnright {
     margin-left: 20px;
   }
 
   .leftblock {
     position: relative;
-    width:100%;
-  }
-
-  .rightblock {
-    position: relative;
-    padding-top: 10px;
     width:100%;
   }
 
