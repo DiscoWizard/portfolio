@@ -9,7 +9,7 @@ body {
   font-weight: bold;
   justify-content: center;
   margin: 0px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .copy {
@@ -99,6 +99,7 @@ big {font-size: larger;}
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 
 .quad {
@@ -107,7 +108,7 @@ big {font-size: larger;}
   height:50vh;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
 }
 .quad:hover .overlay {
   opacity: 1;
@@ -124,6 +125,7 @@ big {font-size: larger;}
   opacity: 0;
   transition: .5s ease;
   background-color: blue;
+  overflow: visible;
 }
 
 .list {
@@ -137,12 +139,17 @@ big {font-size: larger;}
   transform: translate(-50%, -50%);
   text-align: center;
   line-height: 1.6;
+  overflow: visible;
 }
 
-/* POPUPS */
+
 #pop {position: relative;}
 #pop a span { display: none; color: #FFFFFF; }
-#pop a:hover span { display: block; position: absolute; left: 200px; top:45px; color: #FFFFFF; z-index: 20}
+#pop a:hover span { display: block; position: absolute; left: 200px; top:45px; color: #FFFFFF; z-index: 500}
+
+#popEx {position: relative;}
+#popEx a span { display: none; color: #FFFFFF; }
+#popEx a:hover span { display: block; position: absolute; left: 225px; top:45px; color: #FFFFFF; z-index: 500}
 
 
 
