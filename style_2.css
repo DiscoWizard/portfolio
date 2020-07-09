@@ -4,7 +4,7 @@ body {
   color: white;
   font-size: 30px;
   text-align: center;
-  background-image: linear-gradient(90deg,blue,white,white,white,blue);
+  background-color:blue;
   font-family: 'Kanit', sans-serif;
   font-weight: bold;
   justify-content: center;
@@ -156,6 +156,15 @@ big {font-size: larger;}
 #popPr a:hover span { display: block; position: absolute; left: 350px; top:45px; color: #FFFFFF; z-index: 500}
 
 
+.mobiletitle {
+  display: none;
+  z-index: -500;
+}
+.mobiletext {
+  display: none;
+}
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -182,6 +191,7 @@ body {
 
 .overlay {
   z-index: 100;
+  opacity: 100;
 }
 
 .quad {
@@ -189,6 +199,26 @@ body {
   width:100%;
   height:50vh;
   max-height: 500px;
+}
+
+.mobiletitle {
+  position: sticky;
+  top: 0px;
+  display: block;
+  z-index: 150;
+  height: 50px;
+  background-color: orange;
+}
+.mobiletext {
+  background-color: orange;
+  display: block;
+  z-index: 151;
+  font-size: 35px;
+  padding-bottom: 20px;
+  padding: -200px;
+  color: blue;
+  line-height: 1;
+  padding-top: 10px;
 }
 
 }
