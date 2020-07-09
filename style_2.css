@@ -20,7 +20,7 @@ body {
   color: white;
   font-style: italic;
   text-align: left;
-  z-index: 100;
+  z-index: 500;
 }
 
 .mezard {
