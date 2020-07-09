@@ -189,6 +189,10 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper {
+  margin-top: 50px;
+}
+
 .copy {
   font-size:5px;
 }
