@@ -209,10 +209,6 @@ body {
   overflow-x: hidden;
 }
 
-/* .wrapper {
-  margin-top: 150px;
-} */
-
 .copy {
   font-size:5px;
 }
@@ -304,6 +300,12 @@ body {
   z-index: 40;
   animation: spinny1 8s infinite linear;
   display: block;
+}
+.wizkick1 {
+  display: none;
+}
+.wizkick2 {
+  display: none;
 }
 
 }
