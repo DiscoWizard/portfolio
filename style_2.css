@@ -147,15 +147,15 @@ big {font-size: larger;}
 
 #pop {position: relative;}
 #pop a span { display: none; color: #FFFFFF; }
-#pop a:hover span { display: block; position: absolute; left: 200px; top:45px; color: #FFFFFF; z-index: 500}
+#pop a:hover span { display: block; position: absolute; left: 200px; top:45px; color: #FFFFFF; z-index: 900}
 
 #popEx {position: relative;}
 #popEx a span { display: none; color: #FFFFFF; }
-#popEx a:hover span { display: block; position: absolute; left: 225px; top:45px; color: #FFFFFF; z-index: 500}
+#popEx a:hover span { display: block; position: absolute; left: 225px; top:45px; color: #FFFFFF; z-index: 900}
 
 #popPr {position: relative;}
 #popPr a span { display: none; color: #FFFFFF; }
-#popPr a:hover span { display: block; position: absolute; left: 350px; top:45px; color: #FFFFFF; z-index: 500}
+#popPr a:hover span { display: block; position: absolute; left: 350px; top:45px; color: #FFFFFF; z-index: 900}
 
 
 .mobiletitle {
@@ -217,6 +217,9 @@ body {
   z-index: 100;
   opacity: .8;
 }
+.quad:hover .overlay {
+  opacity: .8;
+}
 
 .quad {
   position: relative;
@@ -257,9 +260,9 @@ body {
   width: 25%;
 }
 
-#pop a:hover span { display: block; position: absolute; left: 150px; top:45px; color: #FFFFFF; z-index: 500}
-#popEx a:hover span { display: block; position: absolute; left: 180px; top:45px; color: #FFFFFF; z-index: 500}
-#popPr a:hover span { display: block; position: absolute; left: 250px; top:45px; color: #FFFFFF; z-index: 500}
+#pop a:hover span { display: block; position: absolute; left: 130px; top:45px; color: #FFFFFF; z-index: 99999}
+#popEx a:hover span { display: block; position: absolute; left: 150px; top:45px; color: #FFFFFF; z-index: 99999}
+#popPr a:hover span { display: block; position: absolute; left: 220px; top:45px; color: #FFFFFF; z-index: 99999}
 
 #oop {
   display: none;
