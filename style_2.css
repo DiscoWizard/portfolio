@@ -262,7 +262,7 @@ body {
 
 #pop a:hover span { display: block; position: absolute; left: 130px; top:45px; color: #FFFFFF; z-index: 99999}
 #popEx a:hover span { display: block; position: absolute; left: 150px; top:45px; color: #FFFFFF; z-index: 99999}
-#popPr a:hover span { display: block; position: absolute; left: 220px; top:45px; color: #FFFFFF; z-index: 99999}
+#popPr a:hover span { display: block; position: absolute; left: 100px; top:15px; color: #FFFFFF; z-index: 99999}
 
 #oop {
   display: none;
