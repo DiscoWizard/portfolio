@@ -39,7 +39,7 @@ body {
   margin-left: -75px;
   margin-top: -75px;
   z-index: 40;
-  animation: spinny1 8s infinite linear;
+  animation: spinny1 4s infinite linear;
   display: block;
 }
 .wizkick2 {
@@ -61,6 +61,7 @@ to {
   transform: rotate(359deg);
 }
 }
+
 
 a {
   color: white;
