@@ -5,6 +5,7 @@ body {
   font-family: 'Kanit', sans-serif;
   font-weight: bold;
   text-align: center;
+  justify-content: center;
   background-color:white;
   margin: 0px;
 }
@@ -23,16 +24,14 @@ body {
 
 h1 {
   letter-spacing: 2px;
-  font-size: 10vw;
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  color:grey;
+  font-size: 40px;
 }
 
 h2 {
-  color:grey;
-  font-size: 4vw;
+  color:lightgrey;
+  font-size: 35px;
+  width:100%;
 }
 
 .quad {
@@ -42,7 +41,7 @@ h2 {
   align-items: center;
   justify-content: center;
   overflow: visible;
-  border-color: red;
+  border-color: white;
   border-width: thin;
   flex-wrap: wrap;
   flex-direction: row;
@@ -62,7 +61,7 @@ h2 {
   position: relative;
   height: 80%;
   width: 80%;
-  background-color: red;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -70,6 +69,83 @@ h2 {
   overflow: visible;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.slicea {
+  position: relative;
+  width:100%;
+  min-height:70vh;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  border-color: white;
+  border-width: thin;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  max-width:70%;
+}
+.slice {
+  position: relative;
+  width:100%;
+  min-height:70vh;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  border-color: white;
+  border-width: thin;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+}
+.slicel {
+  position: relative;
+  width:100%;
+  min-height:70vh;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  border-color: white;
+  border-width: thin;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+}
+.section {
+  position: relative;
+  width: 20%;
+  height: 50%;
+  padding-bottom: 3%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  min-width: 200px;
+}
+.activity {
+  position: relative;
+  width: 20%;
+  height: 50%;
+  padding-bottom: 3%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  min-width: 250px;
+}
+.level {
+  position: relative;
+  width: 30%;
+  max-height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  background: white;
 }
 
 .credit {
@@ -112,7 +188,7 @@ a {
   background: white;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 
   .quad {
     position: relative;
@@ -128,5 +204,14 @@ a {
     margin-right: 0%;
   }
 
-
+  .activity {
+    min-width: 170px;
+  }
+  .sectiona {
+    max-width:100%;
+  }
+  .slicel {
+    min-height:0px;
+    height: auto;
+  }
   }
