@@ -75,3 +75,12 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: white;
 }
+
+
+
+@media only screen and (max-width: 800px) {
+
+  .credit {
+    font-size: 12px;
+  }
+}
