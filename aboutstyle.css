@@ -83,4 +83,7 @@ a {
   .credit {
     font-size: 12px;
   }
+  body {
+    font-size: 20px;
+  }
 }
