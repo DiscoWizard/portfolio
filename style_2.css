@@ -1,55 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   position:relative;
-  color: white;
-  font-size: 30px;
+  color: black;
+  font-size: 15px;
+  line-height: 1.5;
   text-align: center;
-  background-color:blue;
-  font-family: 'Kanit', sans-serif;
-  font-weight: bold;
+  background-color:white;
+  font-family: 'Kumbh Sans', sans-serif;
   justify-content: center;
+  align-content: center;
   margin: 0px;
   overflow: visible;
+  overflow-x: hidden;
 }
 
-.copy {
-  font-size: 10px;
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  color: white;
-  font-style: italic;
-  text-align: left;
-  z-index: 500;
+#nav {
+  position: relative;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-top:6vw;
+  padding-bottom:1vw;
 }
 
-.mezard {
+.section {
+  position: relative;
+  background-color: white;
+  width: 300px;
+  padding:20px;
+  margin:10px;
+  justify-content: center;
+  align-content: center;
+}
+
+#about {
+  position: relative;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+  padding-bottom:10vw;
+}
+
+
+#titlee {
   position: absolute;
-  bottom: -20px;
-  right: 25px;
-  z-index: 155;
-  width: 20%;
+  width: 100%;
+  color: white;
+  z-index: 100;
+  text-align: left;
+  margin: 30px;
+  text-shadow: 1px 1px 2px black, 0 0 10px black;
+
 }
 
+h2 {
+  font-weight: lighter;
+}
+p {
+  text-align: left;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+
+.mySlides {
+  position: relative;
+  height:100vh;
+  width: 100vw;
+  display:none;
+  background-color: black;
+}
+
+.mySlidesM {
+  position: relative;
+  height:100vh;
+  width: 100vw;
+  display:none;
+  background-color: black;
+}
+
+.wizkick0 {
+  position: absolute;
+  width: 30px;
+  top:100vh;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  z-index: 40;
+  animation: spinny1 2s infinite linear;
+  display: block;
+}
 .wizkick1 {
   position: absolute;
-  width: 150px;
-  top: 50%;
+  width: 100px;
+  top:100vh;
   left: 50%;
-  margin-left: -75px;
-  margin-top: -75px;
+  margin-left: -50px;
+  margin-top: -50px;
   z-index: 40;
   animation: spinny1 4s infinite linear;
   display: block;
 }
 .wizkick2 {
   position: absolute;
-  width: 300px;
-  top: 50%;
+  width: 200px;
+  top:100vh;
   left: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
-  z-index: 40;
+  margin-left: -100px;
+  margin-top: -100px;
+  z-index: 60;
   animation: spinny1 8s infinite linear;
   display: block;
 }
@@ -63,253 +134,33 @@ to {
 }
 
 
-a {
-  color: white;
-  font-style: normal;
-  font-weight: 300;
-  text-decoration: none;
-}
-a:hover {
-  color:orange;
-  text-decoration: underline;
-}
-
-h1 {
-  letter-spacing: 2px;
-  font-size: 50px;
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-p {
-  line-height: 1;
-  font-size: 40px;
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-big {font-size: larger;}
-
-.wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: red;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-}
-
-.quad {
-  position: relative;
-  width:50%;
-  height:50vh;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-}
-.quad:hover .overlay {
-  opacity: 1;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: blue;
-  overflow: visible;
-}
-
-.list {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  line-height: 1.6;
-  overflow: visible;
-}
-
-
-#pop {position: relative;}
+#pop {position: relative;padding-bottom: 10px;}
 #pop a span { display: none; color: #FFFFFF; }
-#pop a:hover span { display: block; position: absolute; left: 200px; top:45px; color: #FFFFFF; z-index: 900}
-
-#popEx {position: relative;}
-#popEx a span { display: none; color: #FFFFFF; }
-#popEx a:hover span { display: block; position: absolute; left: 225px; top:45px; color: #FFFFFF; z-index: 900}
-
-#popPr {position: relative;}
-#popPr a span { display: none; color: #FFFFFF; }
-#popPr a:hover span { display: block; position: absolute; left: 350px; top:45px; color: #FFFFFF; z-index: 900}
+#pop a:hover span { display: block; position: absolute; left: 225px; top:0px; color: #FFFFFF; z-index: 900}
 
 
-.mobiletitle {
-  display: none;
-  z-index: -500;
-}
-.mobiletext {
-  display: none;
-}
-
-#oop {
-  display: block;
-}
-#mobilespacer {
-  position: relative;
-  display: none;
-  width:50%;
-  height:50vh;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-}
-#id {
-  display: none;
-}
-#wiz1 {
-  display: none;
-}
-#wiz2 {
-  display: none;
-}
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: blue;
+  background: white;
 }
 ::-webkit-scrollbar-thumb {
-  background: orange;
+  background: black;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: turquoise;
+  background: grey;
 }
 
 
 @media only screen and (max-width: 800px) {
 
-body {
-  overflow: auto;
-  overflow-x: hidden;
-}
-
-.copy {
-  font-size:5px;
-}
-
-.overlay {
-  z-index: 100;
-  opacity: .8;
-}
-.quad:hover .overlay {
-  opacity: .8;
-}
-
-.quad {
-  position: relative;
-  width:100%;
-  height:50vh;
-  max-height: 500px;
-}
-
-.list {
-  line-height: 1.4;
-  padding: 0px;
-  margin: 0px;
-}
-
-.mobiletitle {
-  position: sticky;
-  top: 0px;
-  display: block;
-  z-index: 150;
-  height: 50px;
-  background-color: orange;
-}
-.mobiletext {
-  background-color: orange;
-  display: block;
-  z-index: 151;
-  font-size: 35px;
-  padding-bottom: 20px;
-  color: blue;
-  line-height: 1;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.mezard {
-  bottom: -50px;
-  width: 25%;
-}
-
 #pop a:hover span { display: block; position: absolute; left: 130px; top:45px; color: #FFFFFF; z-index: 99999}
-#popEx a:hover span { display: block; position: absolute; left: 150px; top:45px; color: #FFFFFF; z-index: 99999}
-#popPr a:hover span { display: block; position: absolute; left: 100px; top:15px; color: #FFFFFF; z-index: 99999}
 
-#oop {
-  display: none;
-}
-#mobilespacer {
-  position: relative;
-  display: block;
-  height:20vh;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-}
 
-#id {
-  display:block;
-}
-#wiz1 {
-  display: block;
-  position: absolute;
-  width: 150px;
-  top: 50%;
-  left: 50%;
-  margin-left: -75px;
-  margin-top: -75px;
-  z-index: 40;
-  animation: spinny1 8s infinite linear;
-  display: block;
-}
-#wiz2 {
-  display: block;
-  position: absolute;
-  width: 300px;
-  top: 50%;
-  left: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
-  z-index: 40;
-  animation: spinny1 8s infinite linear;
-  display: block;
-}
-.wizkick1 {
-  display: none;
-}
-.wizkick2 {
-  display: none;
+#nav {
+  margin-top: 30px;
 }
 
 }
