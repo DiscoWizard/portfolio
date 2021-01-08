@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position:relative;
+  color: black;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  background-color:white;
+  font-family: 'Kumbh Sans', sans-serif;
+  justify-content: center;
+  align-content: center;
+  margin: 0px;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+#nav {
+  position: relative;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-top:6vw;
+  padding-bottom:1vw;
+}
+
+.section {
+  position: relative;
+  background-color: white;
+  width: 250px;
+  padding:20px;
+  margin:10px;
+  justify-content: center;
+  align-content: center;
+}
+
+#about {
+  position: relative;
+  width:1000px;
+  align-content: center;
+  padding-bottom:5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: red;
+}
+
+#words {
+  position: relative;
+  width:70%;
+}
+
+#titlee {
+  position: absolute;
+  width: 100%;
+  color: white;
+  z-index: 100;
+  text-align: left;
+  margin: 30px;
+  text-shadow: 1px 1px 2px black, 0 0 10px black;
+}
+
+h2 {
+  font-weight: lighter;
+}
+p {
+  text-align: left;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+
+.mySlides {
+  position: relative;
+  height:100vh;
+  width: 100vw;
+  display:none;
+  background-color: black;
+}
+
+.myCover {
+  position: absolute;
+  height: 100vh;
+  width:100vw;
+  background-color: #130C60;
+  opacity: .2;
+  z-index: 10;
+}
+
+.mySlidesM {
+  position: relative;
+  height:100vh;
+  width: 100vw;
+  display:none;
+  background-color: black;
+}
+
+.wizkick0 {
+  position: absolute;
+  width: 30px;
+  top:100vh;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  z-index: 40;
+  animation: spinny1 2s infinite linear;
+  display: block;
+}
+.wizkick1 {
+  position: absolute;
+  width: 100px;
+  top:100vh;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  z-index: 40;
+  animation: spinny1 4s infinite linear;
+  display: block;
+}
+.wizkick2 {
+  position: absolute;
+  width: 200px;
+  top:100vh;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  z-index: 60;
+  animation: spinny1 8s infinite linear;
+  display: block;
+}
+@keyframes spinny1 {
+  from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(359deg);
+}
+}
+
+
+#pop {position: relative;padding-bottom: 10px;}
+#pop a span { display: none; color: #FFFFFF; }
+#pop a:hover span { display: block; position: absolute; left: 225px; top:0px; color: #FFFFFF; z-index: 900}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+#pop a:hover span { display: block; position: absolute; left: 130px; top:45px; color: #FFFFFF; z-index: 99999}
+
+
+#nav {
+  margin-top: 30px;
+}
+
+}
