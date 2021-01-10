@@ -10,6 +10,7 @@ body {
   padding: 0px;
   overflow-x: hidden;
   justify-content: center;
+  line-height: 0px;
 }
 
 .all {
@@ -60,7 +61,8 @@ body {
   color: darkgrey;
   font-style: italic;
   text-align: left;
-  z-index: 100
+  z-index: 100;
+  line-height: normal;
 }
 
 img {

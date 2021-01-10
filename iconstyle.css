@@ -3,7 +3,6 @@ body {
   color: blue;
   font-size: 15px;
   font-family: 'Kanit', sans-serif;
-  font-weight: bold;
   text-align: center;
   justify-content: center;
   background-color:white;
@@ -24,8 +23,8 @@ body {
 
 h1 {
   letter-spacing: 2px;
-  color:grey;
-  font-size: 40px;
+  color:black;
+  font-size: 50px;
 }
 
 h2 {
