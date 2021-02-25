@@ -100,6 +100,21 @@ body {
   z-index: 10;
   transform: rotateX(180deg);
 }
+#float7 {
+  position: fixed;
+  width:5%;
+  bottom:5%;
+  left:5%;
+  z-index: 10;
+}
+#float8 {
+  position: fixed;
+  width:6%;
+  height: auto;
+  bottom:5%;
+  right:5%;
+  z-index: 10;
+}
 
 /* .diamond {
   position: absolute;
