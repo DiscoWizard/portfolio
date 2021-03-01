@@ -1,15 +1,16 @@
 body {
   position:relative;
-  color: blue;
+  color: black;
   font-size: 15px;
-  font-family: 'Courier', sans-serif;
-  font-weight: bold;
+  font-family: 'Kumbh', sans-serif;
   text-align: center;
   background-color:white;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
   justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .all {
@@ -22,18 +23,31 @@ body {
   margin: 0px;
   padding: 0px;
 }
-/* .full {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  margin: 20px;
-  margin-top: 5px;
-  height: 100vh; */
+
+h2 {
+  font-size: 30px;
 }
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+section {
+  position: relative;
+  justify-content: space-between;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftside {
+  position: relative;
+  width:47%;
+}
+.rightside {
+  position: relative;
+  width:47%;
+}
+
 .ftext {
   position: relative;
   text-align: right;
@@ -65,112 +79,11 @@ body {
 
 img {
   position: relative;
-  padding: 0px;
-  margin: 0px;
-}
-div {
-  position: relative;
-  padding: 0px;
-  margin: 0px;
+  width: 100%;
 }
 
-#float1 {
-  position: fixed;
-  width:25%;
-  bottom:0px;
-  left:0px;
-  z-index: 10;
-}
-#float2 {
-  position: fixed;
-  width:30%;
-  bottom:0px;
-  right:0px;
-  z-index: 10;
-}
-#float3 {
-  position: fixed;
-  width:10%;
-  top:5%;
-  right:0px;
-  z-index: 10;
-}
-#float4 {
-  position: fixed;
-  width:40%;
-  top:0%;
-  right:0px;
-  z-index: 10;
-}
-#float5 {
-  position: fixed;
-  width:30%;
-  bottom:-5%;
-  left:-5%;
-  z-index: 10;
-}
-#float6 {
-  position: fixed;
-  width:17%;
-  height: auto;
-  bottom:-20%;
-  right:-10%;
-  z-index: 10;
-  transform: rotateX(180deg);
-}
 
-/* .diamond {
-  position: absolute;
-  left: 50vw;
-  margin-left: -13.5vw;
-  bottom: 50%;
-  margin-bottom: -15vw;
-  z-index: 20;
-  width: 25vw;
-  height: auto;
-  animation-name: diabounce;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@keyframes diabounce {
-  0% {transform: rotate(-10deg) ;}
-  50% {transform: rotate(10deg) ;}
-  100% {transform: rotate(-10deg) ;}
-} */
 
-.gif0 {
-  position: absolute;
-  z-index: 30
-}
-.gif1 {
-  position: absolute;
-  left: 0vw;
-  bottom: 0vh;
-  width: 30vh;
-}
-
-a {
-  color: darkgrey;
-  font-style: normal;
-  font-family: "Courier";
-  font-weight: bold;
-}
-
-@keyframes spinny1 {
-  from {
-  transform: rotate(0deg);
-}
-to {
-  transform: rotate(359deg);
-}}
-
-.link {
-  color: orange;
-  font-style: normal;
-  font-family: "Courier";
-  font-weight: bold;
-    background-color: white;
-}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -185,11 +98,18 @@ to {
   background: white;
 }
 
-@media only screen and (max-width: 800px) {
-    /* .full {
-      position: relative;
-      height:auto;
-    } */
-
+@media only screen and (max-width: 1000px) {
+ body {
+   margin-left: 5%;
+   margin-right: 5%;
+ }
 
   }
+
+@media only screen and (min-width: 1500px) {
+   body {
+     margin-left: 20%;
+     margin-right: 20%;
+   }
+
+    }
