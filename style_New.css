@@ -174,7 +174,7 @@ p {
   width: 160px;
   top: 50px;
   overflow: auto;
-  z-index: 20;
+  z-index: 100;
 }
 .dropdown-content a {
   color: white;
