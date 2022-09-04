@@ -25,6 +25,9 @@ p {
   font-weight: 400;
   margin-left: 2%;
 }
+a:visited {
+  color:blue;
+}
 
 .spacer {
   position:relative;
