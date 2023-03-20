@@ -78,7 +78,7 @@ p {
   width: 100%;
   font-size:10px;
   color:white;
-  z-index: 100;
+  z-index: 9999999999999999999999999999999999999999;
   text-align:center;
   justify-content: center;
 }
@@ -137,12 +137,12 @@ p {
   margin-left: 10vw;
   margin-right: 10vw;
   background-color: black;
-  z-index: 3;
+  z-index: 1;
 }
 
 .dropbox {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   justify-content:center;
 }
 
@@ -155,7 +155,7 @@ p {
   border: none;
   cursor: pointer;
   position:relative;
-  z-index: 10;
+  z-index: 1;
   width: 160px;
   transition: 0.3s;
 }
@@ -174,7 +174,7 @@ p {
   width: 160px;
   top: 50px;
   overflow: auto;
-  z-index: 100;
+  z-index: 9999999999999999;
 }
 .dropdown-content a {
   color: white;
@@ -182,12 +182,15 @@ p {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-
+  z-index: 999999999999999999999999;
+}
+#myDropdown {
+  z-index:999999;
 }
 .dropdown a:hover {background-color:#111549;transition: 0.3s;}
-.show {display: block;}
+.show {display: block; z-index: 999999999999}
 /*end dropdown*/
-.dropdown-content a:hover {background-color:#111549;}
+.dropdown-content a:hover {background-color:#111549;z-index:9999999;}
 .dropdown:hover .dropdown-content {display: block;text-decoration: none;color:white;}
 
 
