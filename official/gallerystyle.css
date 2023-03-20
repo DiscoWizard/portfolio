@@ -47,6 +47,7 @@ a:visited {
   text-align: left;
   z-index: 100;
   background-color: blue;
+  padding:2px;
 }
 
 .credit {
@@ -57,7 +58,7 @@ a:visited {
   color: black;
   font-style: italic;
   text-align: left;
-  z-index: 100
+  z-index: 100;
 }
 
 img {
