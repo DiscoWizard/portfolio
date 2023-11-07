@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallerystyle.css" >
+  </head>
+
+  <body>
+    <div class="copy">©WIZARDKICKS 2023</div>
+    <div class="credit">
+      coop portfolio
+      <br> <a href="https://discowizard.github.io/class-site/">go back</a>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+
+
+    <div id="grid" data-columns>
+	<div class="column size-1of3">
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/biker.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/matt.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/katamariZine.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/butchverse1.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/verseheavy.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/versegod.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/scrollform.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/sfinal.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/hsself.jpg"></div>
+
+
+
+
+	</div>
+	<div class="column size-1of3">
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/Butch1.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/Butch2.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/Butch3.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/Butch4.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/vrisrezi.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/elektra.jpg"></div>
+
+
+	</div>
+	<div class="column size-1of3">
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/nikaidodevil.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/photog.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/smash.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/dracula.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/WB1.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/WB2.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/fratt.jpg"></div>
+    <div><img data-enlargable width="100" style="cursor: zoom-in"  src="comics/fratt2.jpg"></div>
+
+
+
+
+    <!-- <div><img data-enlargable width="100" style="cursor: zoom-in" src="images/______.jpg"></div> -->
+
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+$('img[data-enlargable]').addClass('img-enlargable').click(function(){
+    var src = $(this).attr('src');
+    var modal;
+    function removeModal(){ modal.remove(); $('body').off('keyup.modal-close'); }
+    modal = $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        backgroundSize: 'contain',
+        width:'100%', height:'100%',
+        position:'fixed',
+        zIndex:'10000',
+        top:'0', left:'0',
+        cursor: 'zoom-out'
+    }).click(function(){
+        removeModal();
+    }).appendTo('body');
+    //handling ESC
+    $('body').on('keyup.modal-close', function(e){
+      if(e.key==='Escape'){ removeModal(); }
+    });
+});
+</script>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
