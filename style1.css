@@ -200,13 +200,13 @@ img {
   h2 {
     font-size: 18px;
     top: 37%;
-    transform: translate(17%, 50%);
+    transform: translate(8%, 50%);
   }
   h3 {
     font-size: 18px;
-    top: 20%;
+    top: 12%;
     left:19%;
-    transform: translate(20%, 25%);
+    transform: translate(8%, 10%);
   }
   .square {
     position: relative;

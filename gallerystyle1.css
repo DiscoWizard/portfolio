@@ -194,6 +194,9 @@ img {
     margin-right:0px;
   }
 
+  .column { float: left; padding-right: 15px;}
+  .size-1of3 { width: 28%; }
+
   #grid[data-columns]::before {
 		/* content: '3 .column.size-1of3'; */
 	}
